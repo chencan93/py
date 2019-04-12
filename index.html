@@ -1,0 +1,25 @@
+<!DOCTYPE HTML>
+<html>
+
+	<head>
+		<meta charset="utf-8" />
+		<script src="http://libs.baidu.com/jquery/2.0.0/jquery.min.js"></script>
+		<script type="text/javascript" src="js/ChinesePY.js"></script>
+	</head>
+
+	<body style="font-size:12px">
+		<script>
+			Pinyin.GetJP('吖');
+		</script>
+
+		<form>
+    	
+      输入内容： <input type="text" onkeyup="pym.innerHTML = Pinyin.GetJP(this.value);allpym.innerHTML=Pinyin.GetQP(this.value);
+　　　　　　　　staffpym.innerHTML=Pinyin.GetHP(this.value);" /> <br /><br />
+      拼 音 码： <span id="pym"></span><br /><br />
+      拼音全码： <span id="allpym"></span><br /><br />
+      混 拼 码： <span id="staffpym"></span>
+    </form>
+	</body>
+
+</html>
